@@ -1,5 +1,6 @@
 <script>
   import Counter from "./lib/Counter.svelte";
+  import PullRequest from "./lib/PullRequest.svelte";
 
   let items = [{ name: "new", number: 0 }];
 
@@ -67,4 +68,5 @@
   </button>
   <p>title list: {items.map((counter) => counter.name).join(", ")}</p>
   <p>sum of count: {items.reduce((total, { number }) => total + number, 0)}</p>
+  <PullRequest />
 </div>
